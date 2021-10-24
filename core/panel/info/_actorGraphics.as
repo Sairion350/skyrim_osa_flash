@@ -1,4 +1,4 @@
-﻿
+﻿import OADraw;
 
 class core.panel.info._actorGraphics extends MovieClip
 {

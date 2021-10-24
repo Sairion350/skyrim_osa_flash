@@ -49,13 +49,12 @@ class OMajor extends MovieClip
 
 	public function OMajor()
 	{
-
 		o = this;
 		osaStatus = String("O");
 		prefixDir = "../../meshes/";
 		omfixDir = "../../";
 		viewStage = 0;
-		flashDevMode = false;
+		flashDevMode = true;
 		log = new core.system.logData(this);
 		
 		log.addLog("boot", "MAJ | OSA UI Loaded | version: " + ver + "...")
@@ -226,11 +225,11 @@ class OMajor extends MovieClip
 			{
 				maj.ctr.TOG();
 			}
-			else if (Key.getCode() == 36)
+			else if (Key.getCode() == 103)
 			{
 				maj.ctr.YES();
 			}
-			else if (Key.getCode() == 35)
+			else if (Key.getCode() == 97)
 			{
 				maj.ctr.NO();
 			}
