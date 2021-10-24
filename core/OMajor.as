@@ -267,17 +267,29 @@ class OMajor extends MovieClip
 			{
 				maj.com.skyActroReadyCheck(22);
 			}
-			else if (Key.getCode() == 49)
+			else if (Key.getCode() == 38)
 			{
 				//maj.com.skyActraInit(12)
+				//maj.sim.simScanMods();
+				//maj.sim.simINI();
+
+				maj.simStageStart();
+				
 				maj.sim.simActraAdd();
 				maj.sim.simActraAdd();
 				maj.sim.simActraScaleAdd();
 				maj.sim.simActraScaleAdd();
+				maj.sim.simActraOHeightAdd();
+				maj.sim.simActraOHeightAdd();
 				maj.com.skyActroReadyCheck(22);
 				maj.com.skyActroReadyCheck(22);
 				
-				maj.simStageStart();
+				maj.com.skyActraInit(22)
+				maj.com.skySyncComplete(22);
+				
+				
+				
+				
 			}
 			else if (Key.getCode() == 50)
 			{
