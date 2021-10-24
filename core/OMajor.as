@@ -221,7 +221,7 @@ class OMajor extends MovieClip
 			{
 				maj.ctr.RIGHT();
 			}
-			else if (Key.getCode() == 5000)
+			else if (Key.getCode() == 105)
 			{
 				maj.ctr.TOG();
 			}
