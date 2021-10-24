@@ -204,24 +204,24 @@ class OMajor extends MovieClip
 		keyListener.onKeyDown = function()
 		{
 			trace(Key.getCode());
-			if (Key.getCode() == 38)
+			if (Key.getCode() == 104)
 			{
 				maj._parent.fuck();
 				maj.ctr.UP();
 			}
-			else if (Key.getCode() == 40)
+			else if (Key.getCode() == 101)
 			{
 				maj.ctr.DOWN();
 			}
-			else if (Key.getCode() == 37)
+			else if (Key.getCode() == 100)
 			{
 				maj.ctr.LEFT();
 			}
-			else if (Key.getCode() == 39)
+			else if (Key.getCode() == 102)
 			{
 				maj.ctr.RIGHT();
 			}
-			else if (Key.getCode() == 33)
+			else if (Key.getCode() == 5000)
 			{
 				maj.ctr.TOG();
 			}
@@ -276,6 +276,8 @@ class OMajor extends MovieClip
 				maj.sim.simActraScaleAdd();
 				maj.com.skyActroReadyCheck(22);
 				maj.com.skyActroReadyCheck(22);
+				
+				maj.simStageStart();
 			}
 			else if (Key.getCode() == 50)
 			{
